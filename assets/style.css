@@ -192,6 +192,11 @@ footer {
     justify-content: space-around;
     gap: 3rem;
     background-color: #080808;
+    padding: 3rem 0;
+}
+
+footer h2 {
+    margin-top: 0;
 }
 
 footer > div:first-child > span {
@@ -226,7 +231,7 @@ section {
     padding: 8rem 4rem;
 
     display: flex;
-    flex-wrap: wrap;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
 }
@@ -235,37 +240,42 @@ section {
     width: 30%;
 }
 
-.dual > .content {
+.dual > *:not(.image) {
     min-width: 40rem;
     width: 70%;
-    padding: 5rem;
 }
 
 
+@media screen and (max-width: 1000px) {
+    .dual {
+        flex-direction: column;
+    }
+
+    .dual > .image {
+        width: 100%;
+    }
+}
+
 
 .trigallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     align-items: center;
-
     padding: 3rem;
     gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
 }
 
 .trigallery h3 {
     margin: 0;
-    padding: 1.5rem 0;
     padding-bottom: 2rem;
 }
 
 .trigallery > * {
     border-top: 4px solid currentColor;
     background-color: #080808;
-    width: 33%;
-    padding: 1rem 2rem;
+    height: 100%;
+    padding: 2rem;
     margin: 0;
-    position: relative;
     transition: all .2s;
 }
 
@@ -277,17 +287,6 @@ section {
     margin-left: 5rem;
 }
 
-
-.dual {
-    display: flex;
-    align-items: flex-start;
-}
-
-.dual > * {
-    width: 50%;
-
-    padding: 4rem;
-}
 
 ul li a {
     color: currentColor;
