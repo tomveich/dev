@@ -7,6 +7,14 @@
         
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            a.btn {
+                text-decoration: none;
+            }
+        </style>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>nexter &mdash; your home, your freedom</title>
@@ -20,7 +28,7 @@
             <img src="img/logo.png" alt="Nexter logo" class="header__logo">
             <h3 class="heading-3">Your own home:</h3>
             <h1 class="heading-1">The ultimate personal freedom</h1>
-            <button class="btn header__btn">View our properties</button>
+            <a class="btn header__btn" href="#properties">View our properties</a>
             <div class="header__seenon-text">Seen on</div>
             <div class="header__seenon-logos">
                 <img src="img/logo-bbc.png" alt="Seen on logo 1">
@@ -117,7 +125,7 @@
             <button class="btn">Find your own home</button>
         </div>
 
-        <section class="homes">
+        <section class="homes" id="properties">
             <div class="home">
                 <img src="img/house-1.jpeg" alt="House 1" class="home__img">
                 <svg class="home__like">

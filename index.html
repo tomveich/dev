@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A web developer.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/style.css">
     <script src="assets/app.js" type="module"></script>
@@ -21,47 +21,83 @@
         <section>
             <h2>My portfolio</h2>
             <div class="carousel">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" xml:space="preserve" viewBox="340 340 400 400"><g><path class="st0" d="M551.8,608.5h52.9c14.2,0,25.7-11.6,25.7-25.9c0-14-11-25.3-24.7-25.9h-130c-0.7,0-1.3,0-2-0.1h-0.5v0   c-31.3-1.3-56.4-27.3-56.4-59.3c0-32.8,26.3-59.3,58.8-59.3v0l236.4,0C677.2,379.4,613.2,340,540,340c-110.5,0-200,89.5-200,200   c0,24.1,4.3,47.2,12.1,68.5H551.8z"/><path class="st0" d="M727.9,471.5H528.6v0h-52.9c-14.2,0-25.7,11.6-25.7,25.9c0,13.9,10.9,25.2,24.5,25.9h130.2v0   c0.8,0,1.6,0,2.4,0.1h0v0c31.3,1.3,56.4,27.3,56.4,59.3c0,32.8-26.3,59.3-58.8,59.3H367.9C402.8,700.6,466.8,740,540,740   c110.5,0,200-89.5,200-200C740,515.9,735.7,492.8,727.9,471.5z"/></g></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M250 936V584q-52-14-91-53t-39-95q0-53 30.5-94t78.5-57q23-48 68.5-78T400 177q35 0 65.5 12t55.5 32q10-2 19-3.5t20-1.5q66 0 113 47t47 113q0 22-9 44t-23 36h92q25 0 42.5 17.5T840 516v280q0 25-17.5 42.5T780 856H670v80H250Zm-70-500q0 38 31 64t69 26q32 0 58-17.5t53-50.5q23-28 55-50t74-22h140q0-45-26.5-77.5T560 276q-18 0-35.5 5.5L507 287l-19-16q-18-16-41-25t-47-9q-35 0-67 18t-47 50l-14 30-32 11q-26 9-43 35.5T180 436Zm490 360h110V516H670v280Z"/></svg>
+                <!-- Interstate Network -->
+                <a href="https://interstate.network/" target="_blank">
+                    <img src="./pictures/interstatenetwork.svg" alt="Interstate Network">
+                </a>
+                <!-- U faza -->
+                <a href="https://kaviarenufaza.github.io/" target="_blank">
+                    <img src="./pictures/ufaza.svg" alt="U Faza">
+                </a>
+                <!-- Liv -->
+                <a href="https://vilinka.github.io/" target="_blank">
+                    <img src="./pictures/liv.png" alt="Liv's art">
+                </a>
+                <!-- Berry Empire -->
+                <a href="https://berryempire.cupertinoalliance.ca/" target="_blank">
+                    <img src="./pictures/berryempire.svg" alt="Berry Empire">
+                </a>
             </div>
         </section>
-        <section>
+        <section id="portfolio">
             <h2>My projects</h2>
             <div class="carousel">
-                <span>
-                    Natours
-                </span>
-                <span>
-                    Trillo
-                </span>
-                <span>
-                    Revend
-                </span>
-                <span>
-                    Nexter
-                </span>
-                <span>
-                    Drope
-                </span>
-                <span>
-                    space.oli.cx
-                </span>
+                <a href="/project/sdrpp/" target="_blank">
+                    <img src="./pictures/sdrpp.png" alt="SDR++ Website Redesign">
+                </a>
+                <a href="/project/natours/" target="_blank">
+                    <img src="./pictures/natours.png" alt="Natours">
+                </a>
+
+                <a disabled href="#portfolio" onclick="alert('Revend is an ebay-like online auction site I developed in Node.JS using WebSockets. It didn\'t catch up to the competition, and I can\'t justify keeping the server alive because of the costs.')">
+                    <img src="./pictures/revend.png" alt="Revend">
+                </a>
+                <a href="/project/nexter/" target="_blank">
+                    <img src="./pictures/nexter.png" alt="Nexter">
+                </a>
+
+                <!-- Bloomflare NFT -->
+                <a href="./project/bloomflare/" target="_blank">
+                    <img src="./pictures/bloomflare.png" alt="Bloomflare NFTs">
+                </a>
+
+                <a disabled href="#projects" onclick="alert(`Drope.io was a social network site I developed in PHP. Because the project didn't succeed, I decided not to continue hosting it.`)">
+                    <img src="./pictures/drope.svg" alt="Drope.io">
+                </a>
+                <!--<a href="https://space.oli.cx" target="_blank">Space.oli.cx</a>-->
             </div>
         </section>
         <section>
             <h2>I contributed to</h2>
             <div class="carousel">
-                <!-- ADA DEV PORTAL --> <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 271.83 251.17"><title>Cardano Developer Portal</title><path class="cls-1" d="M138.22,199.2a18.34,18.34,0,0,0,17.24,19.32l1,0a18.3,18.3,0,1,0-18.29-19.35Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M70,194.53a5.91,5.91,0,1,0,5.58,6.24A5.9,5.9,0,0,0,70,194.53Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M137.06,93a5.92,5.92,0,1,0-7.95-2.62A5.92,5.92,0,0,0,137.06,93Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M155.63,125.37a9.14,9.14,0,1,0-12.28-4.05A9.13,9.13,0,0,0,155.63,125.37Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M93.14,147.64A7.53,7.53,0,1,0,91,137.22,7.53,7.53,0,0,0,93.14,147.64Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M104.27,191.23a9.14,9.14,0,1,0,8.61,9.65A9.15,9.15,0,0,0,104.27,191.23Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M94.14,252.68A7.53,7.53,0,1,0,104.26,256,7.53,7.53,0,0,0,94.14,252.68Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M129.67,172.34a10.76,10.76,0,1,0-3.1-14.9A10.75,10.75,0,0,0,129.67,172.34Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M242.39,124.65A9.15,9.15,0,1,0,239.76,112,9.14,9.14,0,0,0,242.39,124.65Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M261.15,92.37a5.92,5.92,0,1,0-1.71-8.19A5.92,5.92,0,0,0,261.15,92.37Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M243.83,181.78a18.3,18.3,0,1,0-2.09,36.55l1.06,0a18.3,18.3,0,0,0,13.64-30.49A18.08,18.08,0,0,0,243.83,181.78Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M161.64,171.07A18.23,18.23,0,0,0,178,181.14a18.31,18.31,0,0,0,16.34-26.55A18.24,18.24,0,0,0,178,144.52a18.31,18.31,0,0,0-16.34,26.55Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M305.14,147.62A7.53,7.53,0,1,0,295,144.28,7.54,7.54,0,0,0,305.14,147.62Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M258.72,153.45a10.76,10.76,0,1,0,14.45,4.77A10.76,10.76,0,0,0,258.72,153.45Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M199,89.61a7.53,7.53,0,1,0-7.1-7.94A7.52,7.52,0,0,0,199,89.61Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M198.87,137a10.76,10.76,0,1,0-10.13-11.36A10.76,10.76,0,0,0,198.87,137Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M140.57,246.84a10.76,10.76,0,1,0-14.45-4.76A10.76,10.76,0,0,0,140.57,246.84Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M205.83,152.7a18.29,18.29,0,1,0,15.32-8.27A18.31,18.31,0,0,0,205.83,152.7Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M237.65,229.23a18.31,18.31,0,1,0-16.34,26.54,18.31,18.31,0,0,0,16.34-26.54Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M269.62,228a10.76,10.76,0,1,0,3.09,14.9A10.78,10.78,0,0,0,269.62,228Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M304.66,200.46a9.14,9.14,0,1,0-9.65,8.61A9.15,9.15,0,0,0,304.66,200.46Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M330,194a5.92,5.92,0,1,0,5.57,6.25A5.93,5.93,0,0,0,330,194Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M306.14,252.65a7.53,7.53,0,1,0,2.17,10.43A7.53,7.53,0,0,0,306.14,252.65Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M138.14,307.92a5.92,5.92,0,1,0,1.7,8.2A5.92,5.92,0,0,0,138.14,307.92Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M262.22,307.3a5.92,5.92,0,1,0,8,2.62A5.92,5.92,0,0,0,262.22,307.3Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M193.46,247.59a18.29,18.29,0,1,0-15.32,8.27A18.21,18.21,0,0,0,193.46,247.59Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M156.9,275.65a9.14,9.14,0,1,0,2.63,12.66A9.16,9.16,0,0,0,156.9,275.65Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M199.56,310.68a7.53,7.53,0,1,0,7.09,7.95A7.54,7.54,0,0,0,199.56,310.68Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M199.64,263.3a10.76,10.76,0,1,0,10.13,11.35A10.75,10.75,0,0,0,199.64,263.3Z" transform="translate(-63.73 -74.56)"/><path class="cls-1" d="M243.65,274.92A9.15,9.15,0,1,0,255.94,279,9.14,9.14,0,0,0,243.65,274.92Z" transform="translate(-63.73 -74.56)"/></svg>
-                <!-- MDN DOCS --> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361 104.2" style="enable-background:new 0 0 361 104.2" xml:space="preserve" role="img"><title>MDN Web Docs</title><path d="M197.6 73.2h-17.1v-5.5h3.8V51.9c0-3.7-.7-6.3-2.1-7.9-1.4-1.6-3.3-2.3-5.7-2.3-3.2 0-5.6 1.1-7.2 3.4s-2.4 4.6-2.5 6.9v15.6h6v5.5h-17.1v-5.5h3.8V51.9c0-3.8-.7-6.4-2.1-7.9-1.4-1.5-3.3-2.3-5.6-2.3-3.2 0-5.5 1.1-7.2 3.3-1.6 2.2-2.4 4.5-2.5 6.9v15.8h6.9v5.5h-20.2v-5.5h6V42.4h-6.1v-5.6h13.4v6.4c1.2-2.1 2.7-3.8 4.7-5.2 2-1.3 4.4-2 7.3-2s5.3.7 7.5 2.1c2.2 1.4 3.7 3.5 4.5 6.4 1.1-2.5 2.7-4.5 4.9-6.1s4.8-2.4 7.9-2.4c3.5 0 6.5 1.1 8.9 3.3s3.7 5.6 3.7 10.2v18.2h6.1v5.5zm42.5 0h-13.2V66c-1.2 2.2-2.8 4.1-4.9 5.6-2.1 1.6-4.8 2.4-8.3 2.4-4.8 0-8.7-1.6-11.6-4.9-2.9-3.2-4.3-7.7-4.3-13.3 0-5 1.3-9.6 4-13.7 2.6-4.1 6.9-6.2 12.8-6.2s9.8 2.2 12.3 6.5V22.7h-8.6v-5.6h15.8v50.6h6v5.5zm-13.3-16.8V52c-.1-3-1.2-5.5-3.2-7.3s-4.4-2.8-7.2-2.8c-3.6 0-6.3 1.3-8.2 3.9-1.9 2.6-2.8 5.8-2.8 9.6 0 4.1 1 7.3 3 9.5s4.5 3.3 7.4 3.3c3.2 0 5.8-1.3 7.8-3.8 2.1-2.6 3.1-5.3 3.2-8zm61.5 16.8H269v-5.5h6V51.9c0-3.7-.7-6.3-2.2-7.9-1.4-1.6-3.4-2.3-5.7-2.3-3.1 0-5.6 1-7.4 3s-2.8 4.4-2.9 7v15.9h6v5.5h-19.3v-5.5h6V42.4h-6.2v-5.6h13.6V43c2.6-4.6 6.8-6.9 12.7-6.9 3.6 0 6.7 1.1 9.2 3.3s3.7 5.6 3.7 10.2v18.2h6v5.4h-.2z" style="fill:var(--text-primary)"></path><g style="fill:var(--text-link)"><path d="M42 .2 13.4 92.3H1.7L30.2.2H42zM52.4.2v92.1H42V.2h10.4zm40.3 0L64.2 92.3H52.5L81 .2h11.7zM103.1.2v92.1H92.7V.2h10.4zM294 95h67v8.8h-67V95z"></path></g></svg>
+                <!-- MDN DOCS --> 
+                <a href="https://developer.mozilla.org/en-US" target="_blank">
+                    <img src="./pictures/mdn.svg" alt="MDN Web Docs">
+                </a>
+    
+                <!-- ADA DEV PORTAL -->
+                <a href="https://developers.cardano.org/" target="_blank">
+                    <img src="./pictures/cardano.svg" alt="Cardano Developer Portal">
+                </a>
             </div>
 
         </section>
-        <section class="getintouch">
+
+        <section id="about">
+            <h2>About me</h2>
+            <p>
+                I'm a self-taught Web Developer with over 5 years of experience.
+                Freelancing and working on personal projects allowed me to obtain skills in nearly all fields of Web Development. 
+                Reach out to me for my resumé or any additional information.
+            </p>
+        </section>
+
+        <section id="getintouch">
             <div>
-                <span>Get in touch</span>
-                <button onclick="if(confirm('Maybe later')){alert('Thank you')}else{alert('...')}">
-                    <span>Email me</span>
-                </button>
+                <span>Interested?</span>
+                <a class="button" target="_blank" href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwGrSYDVkh-kw4BkgpchQmZb_jNzc5hKbR6FkEWOYHbbsKzQ/formResponse">
+                    <span>Get in touch</span>
+                </a>
             </div>
         </section>
 
