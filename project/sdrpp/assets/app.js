@@ -55,18 +55,20 @@ showreleases.addEventListener("click", async e => {
         const btn = document.createElement("a");
         btn.classList.add("button");
 
-        Object.keys(icons).forEach(function(key) {
-            if(build.name.includes(key)) {
-                btn.innerHTML = icons[key];
-                console.log(key);
-            }
-        })
 
         btn.href = build.browser_download_url;
         btn.target = "_blank";
         const label = document.createElement("span");
         label.innerText = build.name;
         btn.appendChild(label);
+
+        Object.keys(icons).forEach(function(key) {
+            if(build.name.includes(key)) {
+                btn.innerHTML += icons[key];
+                // console.log(key);
+            }
+        })
+
 
 
         releaseslist.appendChild(btn);

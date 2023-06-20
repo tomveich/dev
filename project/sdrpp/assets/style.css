@@ -160,8 +160,10 @@ section#a > .content {
 
 svg {
     fill: currentColor;
-    height: 1.5em;
+    min-height: 1.5em;
+    min-width: 1.5em;
     width: 1.5em;
+    height: 1.5em
 }
 
 button, .button {
@@ -180,8 +182,15 @@ button, .button {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.5em;
+
+    overflow-wrap: anywhere;
+
+}
+
+button > svg, .button > svg {
+    margin-left: auto;
 }
 
 button > img, .button > img {

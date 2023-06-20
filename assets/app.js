@@ -4,7 +4,7 @@ const whoami = document.querySelector("#whoami");
 
 
 // I do comment my code
-const things = ["Designer", "Challenger", "Web Developer"]
+const things = ["Designer", "Tester", "Web Developer"]
 let i = 0;
 
 const changeText = (() => {
